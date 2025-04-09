@@ -36,7 +36,7 @@ document.getElementById("importarBtn").addEventListener("click", async () => {
     .select("CLIENTE")
     .eq("CLIENTE", clienteNumero)
     .eq("CORRERIA", correria)
-    .eq("AÑO", parseInt(anio));
+    .eq("ANIO", parseInt(anio));
 
   if (errorExiste) {
     estado.textContent = "Error al validar pedido existente.";
@@ -72,7 +72,7 @@ document.getElementById("importarBtn").addEventListener("click", async () => {
         VENDEDOR: vendedor,
         REF: ref,
         CORRERIA: correria,
-        AÑO: parseInt(anio),
+        ANIO: parseInt(anio),
         CONSECUTIVO: consecutivo,
         CANTIDAD: cantidad,
         PRECIO_VENDIDO: precio,
@@ -112,7 +112,7 @@ async function validarPedidoExistente(cliente, correria, año) {
       .select('CLIENTE')
       .eq('CLIENTE', cliente)
       .eq('CORRERIA', correria)
-      .eq('AÑO', año);
+      .eq('ANIO', año);
 
     if (error) {
       console.error("Error al consultar Supabase:", error); // 👈 AGREGADO

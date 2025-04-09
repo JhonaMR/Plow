@@ -1,0 +1,59 @@
+<!-- informe-referencias.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informe por Referencia</title>
+  <link rel="stylesheet" href="informe-referencias.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Informe por Referencia</h1>
+
+    <div class="filtros">
+      <label for="correria">Correría:</label>
+      <select id="correria">
+        <option value="">Seleccione una</option>
+        <option value="INICIO DE ANO">Inicio de año</option>
+        <option value="MADRES">Madres</option>
+        <option value="Vacaciones">Vacaciones</option>
+        <option value="Temporada">Temporada</option>
+      </select>
+
+      <label for="anio">Año:</label>
+      <select id="anio">
+        <option value="">Seleccione uno</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+      </select>
+
+      <button id="cargarDatos">Cargar informe</button>
+    </div>
+
+    <table id="tablaReferencias" class="display">
+      <thead>
+        <tr>
+          <th>REF</th>
+          <th>CANTIDAD VENDIDA</th>
+          <th>PRECIO VENTA</th>
+          <th>INVENTARIO</th>
+          <th>PROGRAMADAS</th>
+          <th>CORTADAS</th>
+          <th>PENDIENTES</th>
+          <th>TELA 1</th>
+          <th>PROM TELA 1</th>
+          <th>TELA 2</th>
+          <th>PROM TELA 2</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script type="module" src="informe-referencias.js"></script>
+</body>
+</html>
