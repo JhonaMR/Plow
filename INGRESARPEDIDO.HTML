@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Importar Pedido</title>
+  <link rel="stylesheet" href="INGRESARPEDIDO.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Importar Pedido de Excel</h1>
+
+    <div class="form-group">
+      <label for="archivoExcel">Selecciona el archivo Excel del pedido:</label>
+      <input type="file" id="archivoExcel" accept=".xlsx, .xls" />
+    </div>
+
+    <div class="form-group">
+      <label for="correria">Selecciona la correría:</label>
+      <select id="correria">
+        <option value="">-- Selecciona --</option>
+        <option value="Inicio de ano">Inicio de año</option>
+        <option value="Madres">Madres</option>
+        <option value="Vacaciones">Vacaciones</option>
+        <option value="Temporada">Temporada</option>
+        <!-- Puedes agregar más campañas si lo necesitas -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="anio">Selecciona el año:</label>
+      <select id="anio">
+        <option value="">-- Selecciona --</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+      </select>
+    </div>
+
+    <button id="importarBtn">Importar Pedido</button>
+
+    <div id="estado" class="estado"></div>
+  </div>
+
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+  <script type="module" src="importar.js"></script>
+</body>
+</html>

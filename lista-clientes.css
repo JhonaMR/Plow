@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .display thead {
+    background-color: #0077cc;
+    color: white;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+  }
+  
