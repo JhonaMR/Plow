@@ -2,49 +2,95 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    background: #f4f6f9;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-  }
-  
-  .container {
-    text-align: center;
+    background: #f0f2f5;
+}
+
+.container {
+    background: white;
     padding: 40px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
     margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
     color: #333;
-  }
-  
-  .menu {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .boton {
-    background-color: #4a90e2;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.demo-btn {
+    background: #007bff;
     color: white;
-    padding: 15px 20px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .boton:hover {
-    background-color: #357abd;
-    transform: translateY(-2px);
-  }
-  
+}
+
+.signin-btn {
+    background: #4a90e2;
+    color: white;
+}
+
+.signup-section {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.signup-section h2 {
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.signup-section p {
+    color: #666;
+    margin-bottom: 20px;
+}

@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menú Principal</title>
-  <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Sistema de Reportes</h1>
-    <div class="menu">
-      <a href="ingresar-pedido.html" class="boton">Ingresar Pedidos</a>
-      <a href="informe-referencias" class="boton">Cuadro de Pedidos</a>
-      <a href="reporte-vendedor.html" class="boton">Reporte por Vendedor</a>
-      <a href="informe-clientes.html" class="boton">Informe por Clientes</a>
-      <a href="informe-referencias.html" class="boton">Informe por Referencias</a>
-      <a href="lista-clientes.html" class="boton">Lista de Clientes</a>
-      <a href="resumen-referencia.html" class="boton">Resumen por Referencia</a>
-      <a href="ingresar-despacho.html" class="boton">Ingresar Despacho</a>
-      <a href="pedidos-ingresados.html" class="boton">Pedidos Ingresados</a>
+    <div class="container">
+        <h1>Ingreso</h1>
+        <p class="subtitle">Digite sus credeciales para ingresar</p>
+        
+        <form>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" > 
+            </div>
+            
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" > 
+            </div>
+                        
+            <div class="btn-group">
+                <button type="button" class="signin-btn" onclick="window.location.href='indice.html'">INGRESE</button>
+            </div>            
+        </form>
+        
+        <div class="signup-section">
+            <h2>ARARE</h2>
+        </div>
     </div>
-  </div>
 </body>
 </html>
